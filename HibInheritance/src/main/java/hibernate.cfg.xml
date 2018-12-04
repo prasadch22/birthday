@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <property name="hbm2ddl.auto">create</property>  
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>  
+        <property name="driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/prasad1</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">Password@2018</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>  
+         
+        <mapping class="com.scp.java.MavenMySqlDemo.Employee"></mapping> 
+    <!-- <mapping resource="Employee.hbm.xml"/>   -->
+    </session-factory>   
+</hibernate-configuration>  
